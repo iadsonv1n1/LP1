@@ -6,18 +6,18 @@ class Imovel{
 
 	protected:
 		String endereco;
-		String classificacao;
-		float preco;
-
+		double preco;
+		String condicao
 	public:
 		String getEndereco();
-		String getClassficacao();
-		float getPreco();
+		double getPreco();
+		String getCondicao();
+
 		void setEndereco(String endereco);
-		void setClassficacao(String classificacao);
-		void setPreco(float preco);
-		Imovel (String e, String c, float p) : endereco(e), classificacao(c), preco(p) {}
-		virtual  
+		void setPreco(double preco);
+		void setCondicao(String condicao);
 
-
-}
+		Imovel(String e, double p, String c) : endereco(e), preco(p), condicao(c) {}  
+		//virtual void complemento(){}
+};
+#endif
