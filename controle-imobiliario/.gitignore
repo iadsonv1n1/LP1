@@ -1,0 +1,6 @@
+# Arquivos Objetos
+*.o
+
+# Arquivos Executaveis
+*.out
+*.exe
