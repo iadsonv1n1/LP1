@@ -1,15 +1,21 @@
 #ifndef CASA_H
 #define CASA_H
 
-class Casa : public  {
+#include <string>
+#include "imovel.h"
 
-		protected:
-			String telha;
-			//String caracteristica
-		public:
-			String getTelha();
-			void setTelha(Strin t);
-			Casa (String t, String e, double p) : telha(t), Imovel(e, p) {}
+using std::string;
+
+class Casa : public Imovel{
+
+	protected:
+		string telha;
+		//String caracteristica
+
+	public:
+		string getTelha();
+		void setTelha(string t);
+		Casa (string e, double p, string c, string t) : Imovel(e, p, c), telha(t) { }
 			
 };
 

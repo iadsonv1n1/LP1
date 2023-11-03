@@ -1,7 +1,7 @@
 #include "imovel.h"
 #include <string>
 
-String Imovel::getEndereco(){
+string Imovel::getEndereco(){
 	return endereco;
 }
 
@@ -9,11 +9,11 @@ double Imovel::getPreco(){
 	return preco;
 }
 
-String Imovel::getCondicao(){
+string Imovel::getCondicao(){
 	return condicao;
 }
 
-void Imovel::setEndereco(String e){
+void Imovel::setEndereco(string e){
 	endereco = e;
 }
 
@@ -21,6 +21,6 @@ void Imovel::setPreco(double p){
 	preco = p;
 }
 
-void Imove::setCondicao(String c){
+void Imovel::setCondicao(string c){
 	condicao = c;
 }

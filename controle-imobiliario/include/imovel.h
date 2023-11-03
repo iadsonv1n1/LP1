@@ -1,23 +1,27 @@
 #ifndef IMOVEL_H
 #define IMOVEL_H
 
+#include <string>
+
+using std::string;
 
 class Imovel{
 
 	protected:
-		String endereco;
+		string endereco;
 		double preco;
-		String condicao
+		string condicao;
+
 	public:
-		String getEndereco();
+		string getEndereco();
 		double getPreco();
-		String getCondicao();
+		string getCondicao();
 
-		void setEndereco(String endereco);
+		void setEndereco(string endereco);
 		void setPreco(double preco);
-		void setCondicao(String condicao);
+		void setCondicao(string condicao);
 
-		Imovel(String e, double p, String c) : endereco(e), preco(p), condicao(c) {}  
+		Imovel (string e, double p, string c) : endereco(e), preco(p), condicao(c) { } 
 		//virtual void complemento(){}
 };
 #endif
