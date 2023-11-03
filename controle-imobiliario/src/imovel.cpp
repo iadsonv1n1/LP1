@@ -1,5 +1,4 @@
 #include "imovel.h"
-#include <string>
 
 string Imovel::getEndereco(){
 	return endereco;

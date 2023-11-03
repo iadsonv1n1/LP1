@@ -1,5 +1,3 @@
-#include <string>
-
 #include "casa.h"
 
 string Casa::getTelha(){
